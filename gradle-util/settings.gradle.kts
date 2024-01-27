@@ -10,8 +10,5 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.7.0"
 }
 
-rootProject.name = "kotlin-gradle"
-include("app")
-// add new module
-include("gradle-model")
-include("gradle-util")
+rootProject.name = "gradle-util"
+include("lib")

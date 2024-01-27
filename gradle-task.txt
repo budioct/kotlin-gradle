@@ -36,3 +36,34 @@ kotlin-gradle/app/build/distributions/app/bin/app
 Hello World!
 belajar gradle
 
+
+// membuat module atau modular project
+// tambahkan folder di nama-project/
+gradle-model
+gradle-util
+
+../gradlew init  (di folder gradle-model)
+
+Select type of project to generate: pilih library
+Select implementation language: pilih Kotlin
+Select build script DSL: pilih Kotlin
+Project name (default: gradle-model): Enter
+Source package (default: gradle.model): Enter
+Enter target version of Java (min. 7) (default: 21): Enter
+Generate build using new APIs and behavior (some features may change in the next minor release)? (default: no) [yes, no] : Enter
+
+BUILD SUCCESSFUL in 2m 31s
+2 actionable tasks: 2 executed
+
+// setelah kita membuat module itu belum di kenali oleh project gradle maka dari itu kita perlu masukan direcotry nya ke gradle
+di nama-project/settings.gradle.kts
+
+// add new module
+include("gradle-model")
+include("gradle-util")
+
+// jika mendapat error di setelah membuat multi module.. Error gradle dengan intellij idea
+Cannot access script base class 'org.gradle.kotlin.dsl.KotlinBuildScript'. Check your module classpath for missing or conflicting dependencies
+
+// cek url..
+https://youtrack.jetbrains.com/issue/KTIJ-26855
