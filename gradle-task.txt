@@ -1,0 +1,8 @@
+perintah task gradle
+
+// melihat semua task di gradle
+./gradlew tasks --all
+
+// menjalanakan gradle
+./gradlew run
+
