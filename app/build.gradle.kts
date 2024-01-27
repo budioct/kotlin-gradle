@@ -58,3 +58,14 @@ tasks.register("helloworld"){
         println("world")
     }
 }
+
+// menggunakan gradle properties
+// ./gradlew author
+tasks.register("author"){
+    val author: String by project
+    val email: String by project
+
+    doLast {
+        println("Author $author : $email")
+    }
+}
