@@ -13,3 +13,26 @@ perintah task gradle di windows
 ./gradlew test
 
 
+// di gradle pusat untuk mengatur dependency dan costum task di file
+name-project\app\appbuild.gradle.kts
+
+// untuk mengatur module project gradle di file
+name-project\settings.gradle.kts
+
+// untuk membuat distribution file di gradle
+gradle distTar
+gradle distZip
+
+=> hasil distribution file bisa kita lihat di direktori: app/build/distributions
+
+// menjalankan file distribution yang telah di buat
+// windows
+kotlin-gradle/app/build/distributions/app/bin/app.bat
+
+// linux atau Mac
+kotlin-gradle/app/build/distributions/app/bin/app
+
+// result:
+Hello World!
+belajar gradle
+
