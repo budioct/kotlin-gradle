@@ -1,8 +1,15 @@
-perintah task gradle
+perintah task gradle di windows
 
 // melihat semua task di gradle
 ./gradlew tasks --all
 
 // menjalanakan gradle
 ./gradlew run
+
+// menjalankan kompilasi gradle
+./gradlew classes
+
+// menjalankan kompilasi gradle unit test
+./gradlew test
+
 
