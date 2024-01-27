@@ -14,8 +14,10 @@ plugins {
 }
 
 repositories {
-    // Use Maven Central for resolving dependencies.
-    mavenCentral()
+    // Use Maven Central for resolving dependencies... source dwonload repository dependency
+    mavenCentral() // Apache Maven
+    // jcenter() // Bintaray JCenter
+    // google() // Google Android
 }
 
 dependencies {
@@ -29,6 +31,12 @@ dependencies {
 
     // This dependency is used by the application.
     implementation(libs.guava)
+
+    // Add dependency
+    // implementation(Group-Dependency:Artifact:Version)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+    implementation("com.google.code.gson:gson:2.10.1")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

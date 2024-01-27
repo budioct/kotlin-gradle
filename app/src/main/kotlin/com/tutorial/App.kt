@@ -3,6 +3,8 @@
  */
 package com.tutorial
 
+import com.google.gson.Gson
+
 class App {
     val greeting: String
         get() {
@@ -14,5 +16,7 @@ fun main() {
     println(App().greeting)
 
     println("belajar gradle")
+
+    val gson = Gson() // use gson from dependency
 
 }
